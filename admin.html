@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | ReWear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-recycle"></i>
+                    ReWear
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="admin.html" class="active">Admin</a></li>
+                </ul>
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Admin">
+                    <span>Admin</span>
+                    <div class="dropdown-menu">
+                        <a href="admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Admin Panel -->
+    <section class="admin-panel">
+        <div class="container">
+            <div class="sidebar">
+                <div class="profile-info">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Admin Profile">
+                    <h3>Admin User</h3>
+                    <p>Administrator</p>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="admin.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="admin-items.html"><i class="fas fa-tshirt"></i> Item Moderation</a></li>
+                    <li><a href="admin-users.html"><i class="fas fa-users"></i> User Management</a></li>
+                    <li><a href="admin-reports.html"><i class="fas fa-flag"></i> Reports</a></li>
+                    <li><a href="admin-settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="admin-content">
+                <h2>Item Moderation</h2>
+                <p>Review and approve or reject newly listed items.</p>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>User</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vintage Denim Jacket</td>
+                            <td>Sarah J.</td>
+                            <td>2023-06-15</td>
+                            <td>Pending</td>
+                            <td>
+                                <div class="action-buttons-small">
+                                    <a href="#" class="btn"><i class="fas fa-check"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-times"></i></a>
+                                    <a href="item-detail.html" class="btn-outline"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Floral Summer Dress</td>
+                            <td>Michael T.</td>
+                            <td>2023-06-14</td>
+                            <td>Pending</td>
+                            <td>
+                                <div class="action-buttons-small">
+                                    <a href="#" class="btn"><i class="fas fa-check"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-times"></i></a>
+                                    <a href="item-detail.html" class="btn-outline"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Leather Ankle Boots</td>
+                            <td>Emma R.</td>
+                            <td>2023-06-13</td>
+                            <td>Approved</td>
+                            <td>
+                                <div class="action-buttons-small">
+                                    <a href="#" class="btn"><i class="fas fa-check"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-times"></i></a>
+                                    <a href="item-detail.html" class="btn-outline"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About ReWear</h3>
+                    <p>ReWear is a community clothing exchange platform dedicated to promoting sustainable fashion and reducing textile waste.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="start-swapping.html">Start Swapping</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ReWear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // User dropdown functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const userProfile = document.querySelector('.user-profile');
+            const dropdown = document.querySelector('.dropdown-menu');
+            
+            userProfile.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdown.classList.toggle('show');
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function() {
+                dropdown.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>

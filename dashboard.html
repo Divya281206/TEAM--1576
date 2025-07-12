@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | ReWear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-recycle"></i>
+                    ReWear
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="start-swapping.html">Start Swapping</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                </ul>
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                    <span>Sarah</span>
+                    <div class="dropdown-menu">
+                        <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+        <div class="container">
+            <div class="sidebar">
+                <div class="profile-info">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Profile">
+                    <h3>Sarah Johnson</h3>
+                    <p>Member since June 2023</p>
+                </div>
+                <div class="points-balance">
+                    <h3>Your Points</h3>
+                    <p>1,250</p>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="my-items.html"><i class="fas fa-tshirt"></i> My Items</a></li>
+                    <li><a href="swaps.html"><i class="fas fa-exchange-alt"></i> My Swaps</a></li>
+                    <li><a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
+                    <li><a href="messages.html"><i class="fas fa-envelope"></i> Messages</a></li>
+                    <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div class="content-header">
+                    <h2>My Dashboard</h2>
+                    <a href="add-item.html" class="btn"><i class="fas fa-plus"></i> List an Item</a>
+                </div>
+                <h3>My Listed Items</h3>
+                <div class="items-grid">
+                    <div class="item-card-small">
+                        <div class="item-image-small">
+                            <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket">
+                        </div>
+                        <div class="item-info-small">
+                            <h3>Vintage Denim Jacket</h3>
+                            <div class="item-meta-small">
+                                <span>Size: M</span>
+                                <span>150 pts</span>
+                            </div>
+                            <span class="item-status status-available">Available</span>
+                        </div>
+                    </div>
+                    <div class="item-card-small">
+                        <div class="item-image-small">
+                            <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Summer Dress">
+                        </div>
+                        <div class="item-info-small">
+                            <h3>Floral Summer Dress</h3>
+                            <div class="item-meta-small">
+                                <span>Size: S</span>
+                                <span>200 pts</span>
+                            </div>
+                            <span class="item-status status-pending">Pending Swap</span>
+                        </div>
+                    </div>
+                    <div class="item-card-small">
+                        <div class="item-image-small">
+                            <img src="https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Leather Boots">
+                        </div>
+                        <div class="item-info-small">
+                            <h3>Leather Ankle Boots</h3>
+                            <div class="item-meta-small">
+                                <span>Size: 8</span>
+                                <span>250 pts</span>
+                            </div>
+                            <span class="item-status status-completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 40px;">Recent Swap Activity</h3>
+                <div class="items-grid">
+                    <div class="item-card-small">
+                        <div class="item-image-small">
+                            <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="White Shirt">
+                        </div>
+                        <div class="item-info-small">
+                            <h3>White Button-Up Shirt</h3>
+                            <div class="item-meta-small">
+                                <span>Received from: Alex</span>
+                            </div>
+                            <span class="item-status status-completed">Completed</span>
+                        </div>
+                    </div>
+                    <div class="item-card-small">
+                        <div class="item-image-small">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Black Jeans">
+                        </div>
+                        <div class="item-info-small">
+                            <h3>Slim Black Jeans</h3>
+                            <div class="item-meta-small">
+                                <span>Swap requested</span>
+                            </div>
+                            <span class="item-status status-pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About ReWear</h3>
+                    <p>ReWear is a community clothing exchange platform dedicated to promoting sustainable fashion and reducing textile waste.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="start-swapping.html">Start Swapping</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ReWear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // User dropdown functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const userProfile = document.querySelector('.user-profile');
+            const dropdown = document.querySelector('.dropdown-menu');
+            
+            userProfile.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdown.classList.toggle('show');
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function() {
+                dropdown.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List an Item | ReWear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-recycle"></i>
+                    ReWear
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="start-swapping.html">Start Swapping</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                </ul>
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                    <span>Sarah</span>
+                    <div class="dropdown-menu">
+                        <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Add Item Form -->
+    <section class="add-item">
+        <div class="container">
+            <div class="add-item-form">
+                <h2>List a New Item</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="images">Upload Images</label>
+                        <div class="image-upload">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Click to browse or drag and drop images here</p>
+                            <input type="file" id="images" multiple style="display: none;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Item Title</label>
+                        <input type="text" id="title" class="form-control" placeholder="e.g. Vintage Denim Jacket">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" class="form-control" placeholder="Describe your item in detail including brand, material, condition, etc."></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" class="form-control">
+                                <option value="">Select a category</option>
+                                <option value="tops">Tops</option>
+                                <option value="bottoms">Bottoms</option>
+                                <option value="dresses">Dresses</option>
+                                <option value="outerwear">Outerwear</option>
+                                <option value="shoes">Shoes</option>
+                                <option value="accessories">Accessories</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Type</label>
+                            <select id="type" class="form-control">
+                                <option value="">Select a type</option>
+                                <option value="casual">Casual</option>
+                                <option value="formal">Formal</option>
+                                <option value="sportswear">Sportswear</option>
+                                <option value="vintage">Vintage</option>
+                                <option value="designer">Designer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="size">Size</label>
+                            <select id="size" class="form-control">
+                                <option value="">Select size</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="condition">Condition</label>
+                            <select id="condition" class="form-control">
+                                <option value="">Select condition</option>
+                                <option value="new">New with tags</option>
+                                <option value="excellent">Excellent</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="points">Points Value</label>
+                        <input type="number" id="points" class="form-control" placeholder="Enter points value for redemption">
+                    </div>
+                    <div class="form-group">
+                        <label for="tags">Tags (comma separated)</label>
+                        <input type="text" id="tags" class="form-control" placeholder="e.g. denim, jacket, vintage, levis">
+                    </div>
+                    <button type="submit" class="btn">List Item</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About ReWear</h3>
+                    <p>ReWear is a community clothing exchange platform dedicated to promoting sustainable fashion and reducing textile waste.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Items</a></li>
+                        <li><a href="start-swapping.html">Start Swapping</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ReWear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Image upload functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageUpload = document.querySelector('.image-upload');
+            const fileInput = imageUpload.querySelector('input[type="file"]');
+            
+            imageUpload.addEventListener('click', function() {
+                fileInput.click();
+            });
+
+            fileInput.addEventListener('change', function(e) {
+                if (e.target.files.length > 0) {
+                    imageUpload.innerHTML = `
+                        <i class="fas fa-check-circle"></i>
+                        <p>${e.target.files.length} image(s) selected</p>
+                    `;
+                }
+            });
+
+            // User dropdown functionality
+            const userProfile = document.querySelector('.user-profile');
+            const dropdown = document.querySelector('.dropdown-menu');
+            
+            userProfile.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdown.classList.toggle('show');
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function() {
+                dropdown.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>
